@@ -8,8 +8,38 @@ header {
     height: 70px;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #BispoLogo {
     width: 70px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+#secao1 {
+    margin-left: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#secao2 {
+    margin-right: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+#insta {
+    position: absolute;
+    width: 50px;
 }
