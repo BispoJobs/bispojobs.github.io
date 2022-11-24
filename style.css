@@ -3,7 +3,8 @@ body {
     font-family: Roboto;
     background-color: black;
     background-image: url('./img/fundo.png');
-    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -31,8 +32,8 @@ main {
     color: white;
     background-color: gray;
     border-radius: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: justify;
 }
 
@@ -41,8 +42,8 @@ main {
     color: white;
     background-color: gray;
     border-radius: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: justify;
 }
 
@@ -52,12 +53,16 @@ main {
 
 #insta {
     position: absolute;
-    width: 50px;
-    filter: invert();
+    width: 65px;
     margin-top: 5px;
     margin-left: 8px;
 }
 
+#listaDesign {
+    padding-left: 22px;
+}
+
+/*Responsividade*/
 @media (max-width:600px) {
     main {
         display: grid;
@@ -72,5 +77,13 @@ main {
     #secao1, #secao2, header {
         margin-left: 0;
         margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #insta {
+        width: 50px;
+    }
+    body {
+        background-image: url('./img/fundoMobile.png');
     }
 }
