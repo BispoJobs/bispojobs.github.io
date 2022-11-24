@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     font-family: Roboto;
+    background-color: black;
+    background-image: url('./img/fundo.png');
+    background-attachment: fixed;
 }
 
 header {
-    background-color: black;
+    background-color: gray;
     height: 70px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #BispoLogo {
@@ -24,15 +29,21 @@ main {
 #secao1 {
     margin-left: 30px;
     color: white;
-    background-color: black;
+    background-color: gray;
     border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
 }
 
 #secao2 {
     margin-right: 30px;
     color: white;
-    background-color: black;
+    background-color: gray;
     border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
 }
 
 .titulo {
@@ -42,4 +53,24 @@ main {
 #insta {
     position: absolute;
     width: 50px;
+    filter: invert();
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+@media (max-width:600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #secao1, #secao2, header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width:768px) {
+    #secao1, #secao2, header {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
